@@ -1,7 +1,3 @@
 <resources>
     <string name="app_name">Infinity Miles</string>
-    <string name="buttonBattleship">Battleship</string>
-    <string name="buttoniSpy">iSPY</string>
-    <string name="buttonSpotTheCar">Spot the Car</string>
-    <string name="buttonLicensePlate">License Plate Game</string>
 </resources>
