@@ -4,4 +4,10 @@
     <string name="buttoniSpy">iSPY</string>
     <string name="buttonSpotTheCar">Spot the Car</string>
     <string name="buttonLicensePlate">License Plate Game</string>
+    <string name="buttonA1">A1</string>
+    <string name="buttonA2">A2</string>
+    <string name="buttonA3">A3</string>
+    <string name="buttonA4">A4</string>
+    <string name="toastMiss">Miss!</string>
+    <string name="toastHit">Hit!</string>
 </resources>
