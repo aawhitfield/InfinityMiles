@@ -9,7 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void playBattleship(View view)
     {
-        Intent battleshipIntent = new Intent(this, BattleshipActivity.class);
+        Intent battleshipIntent = new Intent(this, BattleshipPlacementActivity.class);
         startActivity(battleshipIntent);
     }
 
@@ -23,5 +23,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 }
