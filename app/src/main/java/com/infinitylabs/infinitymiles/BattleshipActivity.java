@@ -8,12 +8,14 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import static com.infinitylabs.infinitymiles.R.*;
 import static com.infinitylabs.infinitymiles.R.id.battleshipView;
 import static com.infinitylabs.infinitymiles.R.id.buttonA2;
 import static com.infinitylabs.infinitymiles.R.id.buttonA3;
+import static com.infinitylabs.infinitymiles.R.layout.activity_battleship;
+import static com.infinitylabs.infinitymiles.R.string.*;
 import static com.infinitylabs.infinitymiles.R.string.toastHit;
 import static com.infinitylabs.infinitymiles.R.string.toastMiss;
-
 
 
 public class BattleshipActivity extends AppCompatActivity {
@@ -29,10 +31,10 @@ public class BattleshipActivity extends AppCompatActivity {
 
 
     public void displayResult(View view) {
-        if ((view.getId() == buttonA2) || (view.getId() == buttonA3))
+        if(shipLocations.contains(view.getId()))
 
         {
-            Toast.makeText(getApplicationContext(), R.string.toastHit,
+            Toast.makeText(getApplicationContext(), toastHit,
                     Toast.LENGTH_SHORT)
                     .show();
         } else {
@@ -41,18 +43,20 @@ public class BattleshipActivity extends AppCompatActivity {
                     .show();
         }
 
-        View b = findViewById(view.getId());
-        b.setVisibility(View.GONE);
+        Button b = (Button) view.findViewById(view.getId());
+        b.setText(alreadyChosen);
+        b.setEnabled(false);
 
     }
         @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_battleship);
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
+        setContentView(activity_battleship);
 
         shipLocations = new ArrayList<Integer>();
 
-        shipLocations.add(R.id.buttonA2);
-        shipLocations.add(R.id.buttonA3);
+        shipLocations.add(id.buttonA2);
+        shipLocations.add(id.buttonA3);
     }
 }

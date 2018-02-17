@@ -10,4 +10,5 @@
     <string name="buttonA4">A4</string>
     <string name="toastMiss">Miss!</string>
     <string name="toastHit">Hit!</string>
+    <string name="alreadyChosen">X</string>
 </resources>
