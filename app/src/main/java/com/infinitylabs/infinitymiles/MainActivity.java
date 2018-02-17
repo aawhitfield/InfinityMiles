@@ -13,6 +13,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(battleshipIntent);
     }
 
+    public void playSpotTheCar(View view)
+    {
+        Intent spotTheCarIntent = new Intent(this, SpotTheCarActivity.class);
+        startActivity(spotTheCarIntent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

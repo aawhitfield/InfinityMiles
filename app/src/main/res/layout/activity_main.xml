@@ -33,6 +33,7 @@
         android:id="@+id/SpotTheCarButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="playSpotTheCar"
         android:text="@string/buttonSpotTheCar"
         app:layout_constraintBottom_toTopOf="@+id/LicensePlateButton"
         app:layout_constraintEnd_toEndOf="parent"

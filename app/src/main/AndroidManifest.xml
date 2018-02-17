@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BattleshipActivity" android:parentActivityName=".MainActivity">
-        </activity>
+        <activity android:name=".BattleshipActivity" />
+        <activity android:name=".SpotTheCarActivity"></activity>
     </application>
 
 </manifest>
