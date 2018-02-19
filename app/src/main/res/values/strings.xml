@@ -11,4 +11,7 @@
     <string name="toastMiss">Miss!</string>
     <string name="toastHit">Hit!</string>
     <string name="alreadyChosen">X</string>
+    <string name="placeDestroyer">Please choose where you would like to place your destroyer.</string>
+    <string name="placeDestroyerCount">(Select 2 spaces)</string>
+    <string name="buttonNext">NEXT</string>
 </resources>

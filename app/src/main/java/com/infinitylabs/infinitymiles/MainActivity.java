@@ -19,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(spotTheCarIntent);
     }
 
+    public void playLicensePlate(View view)
+    {
+        Intent licensePlateIntent = new Intent(this, LicensePlateActivity.class);
+        startActivity(licensePlateIntent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

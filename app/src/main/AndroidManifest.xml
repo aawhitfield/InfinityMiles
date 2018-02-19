@@ -16,9 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BattleshipActivity" android:parentActivityName=".BattleshipPlacementActivity"/>
-        <activity android:name=".SpotTheCarActivity" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".BattleshipPlacementActivity" android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".BattleshipActivity"
+            android:parentActivityName=".BattleshipPlacementActivity" />
+        <activity
+            android:name=".SpotTheCarActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BattleshipPlacementActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LicensePlateActivity"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

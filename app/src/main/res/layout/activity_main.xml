@@ -22,6 +22,7 @@
         android:id="@+id/LicensePlateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="playLicensePlate"
         android:text="@string/buttonLicensePlate"
         app:layout_constraintBottom_toTopOf="@+id/iSpyButton"
         app:layout_constraintEnd_toEndOf="parent"

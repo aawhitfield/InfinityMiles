@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.infinitylabs.infinitymiles.SpotTheCarActivity">
+    tools:context="com.infinitylabs.infinitymiles.LicensePlateActivity">
 
     <ListView
-        android:id="@+id/carsListView"
+        android:id="@+id/licensePlateTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"

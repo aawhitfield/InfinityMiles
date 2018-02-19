@@ -13,7 +13,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:text="Please choose where you would like to place your destroyer."
+        android:text="@string/placeDestroyer"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,9 +26,9 @@
         android:layout_marginEnd="137dp"
         android:layout_marginStart="138dp"
         android:layout_marginTop="8dp"
-        android:text="(Select 2 spaces)"
+        android:text="@string/placeDestroyerCount"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -40,7 +40,7 @@
         android:layout_marginEnd="148dp"
         android:layout_marginStart="148dp"
         android:onClick="guessOpponents"
-        android:text="NEXT"
+        android:text="@string/buttonNext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
