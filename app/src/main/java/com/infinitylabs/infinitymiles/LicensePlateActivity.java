@@ -30,11 +30,11 @@ public class LicensePlateActivity extends AppCompatActivity {
         stateList.add("Iowa");
         stateList.add("Kansas");
         stateList.add("Kentucky");
-        stateList.add("Louisiana");
+        stateList.add("louisiana");
         stateList.add("Maine");
         stateList.add("Maryland");
         stateList.add("Massachusetts");
-        stateList.add("Michigan");
+        stateList.add("michigan");
         stateList.add("Minnesota");
         stateList.add("Mississippi");
         stateList.add("Missouri");
