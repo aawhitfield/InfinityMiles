@@ -78,7 +78,8 @@ public class LicensePlateActivity extends AppCompatActivity {
 
         initStateList();
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_checked, stateList);
+        StateAdapter adapter = new StateAdapter(this, stateList);
+
 
         licensePlateListView.setAdapter(adapter);
         licensePlateListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);

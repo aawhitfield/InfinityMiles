@@ -1,66 +1,42 @@
 package com.infinitylabs.infinitymiles;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import static com.infinitylabs.infinitymiles.R.drawable.californiia;
+
 /**
- * Created by Ted on 3/5/2018.
+ * Created by Ted on 3/6/2018.
  */
 
-public class StateAdapter extends BaseAdapter {
-    private Context myContext;
-    private LayoutInflater myInflater;
-    private ArrayList<String> myDataSource;
-
-    public StateAdapter(Context context, ArrayList<String> items)
-    {
-        myContext = context;
-        myDataSource = items;
-        myInflater = (LayoutInflater) myContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+public class StateAdapter extends ArrayAdapter<String> {
+    public StateAdapter(@NonNull Context context, ArrayList<String> states) {
+        super(context, R.layout.state_row, states);
     }
 
+    @NonNull
     @Override
-    public int getCount() {
-        return myDataSource.size();
-    }
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-    @Override
-    public Object getItem(int position) {
-        return myDataSource.get(position);
-    }
+        LayoutInflater myInflater = LayoutInflater.from(getContext());
+        View customView = myInflater.inflate(R.layout.state_row, parent,     false);
 
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
+        String stateItem = getItem(position);
+        TextView stateText = (TextView) customView.findViewById(R.id.stateNameTextView);
+        ImageView stateImage = (ImageView) customView.findViewById(R.id.licensePlateImageView);
 
-    @Override
-    public View getView(int position, View view, ViewGroup viewGroup) {
-        View rowView = myInflater.inflate(R.layout.list_item_recipe, viewGroup, false);
+        stateText.setText(stateItem);
+        stateImage.setImageResource(californiia);
 
-        // Get title element
-        TextView titleTextView = (TextView) rowView.findViewById(R.id.recipe_list_title);
-
-        // Get subtitle element
-        TextView subtitleTextView = (TextView) rowView.findViewById(R.id.recipe_list_subtitle);
-
-        // Get detail element
-        TextView detailTextView = (TextView) rowView.findViewById(R.id.recipe_list_detail);
-
-        // Get thumbnail element
-        TextView thumbnailImageView = (TextView) rowView.findViewById(R.id.recipe_list_thumbnail);
-
-        titleTextView.setText("Test");
-        subtitleTextView.setText("Subtitle");
-        detailTextView.setText("Detail");
-
-        
-        return rowView;
+        return customView;
     }
 }

@@ -15,4 +15,6 @@
     <string name="placeDestroyerCount">(Select 2 spaces)</string>
     <string name="buttonNext">NEXT</string>
     <string name="thumbnail">thumbnail</string>
+    <string name="Image_License_Plate">Image of State License Plate</string>
+    <string name="textStateName">State Name</string>
 </resources>
