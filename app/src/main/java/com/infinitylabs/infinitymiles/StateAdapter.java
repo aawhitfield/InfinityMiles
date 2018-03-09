@@ -18,8 +18,8 @@ import static com.infinitylabs.infinitymiles.R.drawable.californiia;
  * Created by Ted on 3/6/2018.
  */
 
-public class StateAdapter extends ArrayAdapter<String> {
-    public StateAdapter(@NonNull Context context, ArrayList<String> states) {
+public class StateAdapter extends ArrayAdapter<State> {
+    public StateAdapter(@NonNull Context context, State[] states) {
         super(context, R.layout.state_row, states);
     }
 
@@ -30,12 +30,12 @@ public class StateAdapter extends ArrayAdapter<String> {
         LayoutInflater myInflater = LayoutInflater.from(getContext());
         View customView = myInflater.inflate(R.layout.state_row, parent,     false);
 
-        String stateItem = getItem(position);
+        String stateItem = getItem(position).name;
         TextView stateText = (TextView) customView.findViewById(R.id.stateNameTextView);
         ImageView stateImage = (ImageView) customView.findViewById(R.id.licensePlateImageView);
 
         stateText.setText(stateItem);
-        stateImage.setImageResource(californiia);
+        stateImage.setImageResource(getItem(position).licensePlateImage);
 
         return customView;
     }

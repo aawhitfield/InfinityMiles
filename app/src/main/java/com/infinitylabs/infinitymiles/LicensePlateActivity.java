@@ -2,7 +2,6 @@ package com.infinitylabs.infinitymiles;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -10,6 +9,12 @@ import java.util.ArrayList;
 public class LicensePlateActivity extends AppCompatActivity {
 
     ArrayList<String> stateList = new ArrayList<String>();
+    Integer[] stateLicensePlateImageArray = {R.drawable.alabama, R.drawable.alaska, R.drawable.arizona,
+    R.drawable.arkansas, R.drawable.californiia};
+    boolean[] stateFoundArray = new boolean[5];
+    State[] stateArray = new State[5];
+
+
 
     public void initStateList()
     {
@@ -18,6 +23,7 @@ public class LicensePlateActivity extends AppCompatActivity {
         stateList.add("Arizona");
         stateList.add("Arkansas");
         stateList.add("California");
+        /*
         stateList.add("Colorado");
         stateList.add("Connecticut");
         stateList.add("Delaware");
@@ -63,10 +69,18 @@ public class LicensePlateActivity extends AppCompatActivity {
         stateList.add("West Virginia");
         stateList.add("Wisconsin");
         stateList.add("Wyoming");
-
+       */
     }
 
+    public void createStateObjects()
+    {
 
+        for (int i = 0; i < stateArray.length; i++)
+        {
+            stateArray[i] = new State(stateList.get(i), stateLicensePlateImageArray[i], stateFoundArray[i]);
+        }
+
+    }
 
 
     @Override
@@ -77,8 +91,15 @@ public class LicensePlateActivity extends AppCompatActivity {
         ListView licensePlateListView = (ListView) findViewById(R.id.licensePlateTextView);
 
         initStateList();
+        createStateObjects();
 
-        StateAdapter adapter = new StateAdapter(this, stateList);
+
+
+        /* Default Array Adapter
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        android.R.layout.simple_list_item_1, android.R.id.text1, values); */
+
+        StateAdapter adapter = new StateAdapter(this, stateArray);
 
 
         licensePlateListView.setAdapter(adapter);
