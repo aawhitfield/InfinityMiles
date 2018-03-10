@@ -8,11 +8,19 @@ import java.util.ArrayList;
 
 public class LicensePlateActivity extends AppCompatActivity {
 
+    final int numberOfStates = 50;
+
     ArrayList<String> stateList = new ArrayList<String>();
     Integer[] stateLicensePlateImageArray = {R.drawable.alabama, R.drawable.alaska, R.drawable.arizona,
-    R.drawable.arkansas, R.drawable.californiia};
-    boolean[] stateFoundArray = new boolean[5];
-    State[] stateArray = new State[5];
+    R.drawable.arkansas, R.drawable.californiia, R.drawable.colorado, R.drawable.conneticut, R.drawable.delaware, R.drawable.florida, R.drawable.goerga, R.drawable.hawaii, R.drawable.idaho,
+    R.drawable.illinois,R.drawable.indiana, R.drawable.iowa, R.drawable.kansas, R.drawable.kentucky, R.drawable.louisiana,
+    R.drawable.maine, R.drawable.maryland, R.drawable.massechussetts, R.drawable.michigan, R.drawable.minnesota, R.drawable.mississippi, R.drawable.missouri,
+    R.drawable.montana, R.drawable.nebraska, R.drawable.nevada, R.drawable.newhampshire, R.drawable.newjersey, R.drawable.newmexico, R.drawable.newyork,
+    R.drawable.northcarolina, R.drawable.northdakota, R.drawable.ohio, R.drawable.oklahoma, R.drawable.oregon, R.drawable.pennsylvania, R.drawable.rhodeisland,
+    R.drawable.southcarolina, R.drawable.southdakota, R.drawable.tennassee, R.drawable.texas, R.drawable.utah, R.drawable.vermont, R.drawable.virginai,
+    R.drawable.wahington, R.drawable.westvirginia, R.drawable.wisconsin, R.drawable.wyoming};
+    boolean[] stateFoundArray = new boolean[numberOfStates];
+    State[] stateArray = new State[numberOfStates];
 
 
 
@@ -23,7 +31,6 @@ public class LicensePlateActivity extends AppCompatActivity {
         stateList.add("Arizona");
         stateList.add("Arkansas");
         stateList.add("California");
-        /*
         stateList.add("Colorado");
         stateList.add("Connecticut");
         stateList.add("Delaware");
@@ -69,7 +76,6 @@ public class LicensePlateActivity extends AppCompatActivity {
         stateList.add("West Virginia");
         stateList.add("Wisconsin");
         stateList.add("Wyoming");
-       */
     }
 
     public void createStateObjects()

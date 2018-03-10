@@ -16,4 +16,5 @@ public class State {
         this.licensePlateImage = licensePlateImage;
         this.isFound = isFound;
     }
+
 }
