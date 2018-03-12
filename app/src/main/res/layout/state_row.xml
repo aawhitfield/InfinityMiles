@@ -25,4 +25,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/licensePlateImageView"
         app:layout_constraintStart_toEndOf="@+id/licensePlateImageView"
         app:layout_constraintTop_toTopOf="@+id/licensePlateImageView" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/stateNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stateNameTextView" />
+
 </android.support.constraint.ConstraintLayout>
