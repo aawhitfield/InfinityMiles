@@ -24,6 +24,7 @@ public class LicensePlateActivity extends AppCompatActivity {
 
 
 
+
     public void initStateList()
     {
         stateList.add("Alabama");
