@@ -41,7 +41,10 @@ public class StateAdapter extends ArrayAdapter<State> {
 
         stateText.setText(stateItem);
         stateImage.setImageResource(getItem(position).licensePlateImage);
-        if(getItem(position).isFound) {
+        SharedPreferences sharedPref = getContext().getApplicationContext().getSharedPreferences("com.infinitylabs.infinitymiles", Context.MODE_PRIVATE);
+        Boolean myStateStatus = sharedPref.getBoolean(getItem(position).name, false);
+
+        if(myStateStatus) {
             stateCheckbox.setChecked(true);
         }
         else
