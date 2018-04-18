@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context="com.infinitylabs.infinitymiles.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="668dp"
+        android:layout_height="2095dp"
+        android:contentDescription="Background image of hills and a sky."
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/artboard1b" />
+
     <Button
         android:id="@+id/BattleshipButton"
         android:layout_width="wrap_content"
