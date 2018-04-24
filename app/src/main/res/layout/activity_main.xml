@@ -2,24 +2,25 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context="com.infinitylabs.infinitymiles.MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="668dp"
-        android:layout_height="2095dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="false"
         android:contentDescription="Background image of hills and a sky."
         android:cropToPadding="false"
-        android:scaleType="fitCenter"
+        android:scaleType="fitXY"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/artboard1b" />
+        app:srcCompat="@drawable/layout4" />
 
     <Button
         android:id="@+id/BattleshipButton"
